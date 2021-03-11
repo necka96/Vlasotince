@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
+body {
+  font-family: "Indie Flower", cursive;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  height: 100vh;
+}
+
+@media (max-width: 800px) {
+  section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+section .item {
+  width: 100%;
+  height: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-transition: 0.3s ease flex;
+  transition: 0.3s ease flex;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+section .item.show {
+  -webkit-box-flex: 8;
+      -ms-flex: 8;
+          flex: 8;
+}
+
+section .item img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+section .item .caption {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  margin: 30px;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.3);
+  opacity: 0;
+}
+
+section .item.show .caption {
+  opacity: 1;
+}
+/*# sourceMappingURL=main.css.map */
