@@ -78,8 +78,13 @@ section .item .caption {
   bottom: 0;
   margin: 30px;
   padding: 30px;
-  background: rgba(255, 255, 255, 0.3);
+  color: wheat;
+  background: rgba(0, 0, 0, 0.3);
   opacity: 0;
+  -webkit-box-shadow: 0 0 10px blue;
+          box-shadow: 0 0 10px blue;
+  text-shadow: 0 0 10px blue;
+  border: 2px solid black;
 }
 
 section .item.show .caption {
